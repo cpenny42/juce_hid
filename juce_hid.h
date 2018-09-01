@@ -8,6 +8,29 @@
   ==============================================================================
 */
 
+/*******************************************************************************
+ The block below describes the properties of this module, and is read by
+ the Projucer to automatically generate project code that uses it.
+ For details about the syntax and how to create or use a module, see the
+ JUCE Module Format.txt file.
+ 
+ 
+ BEGIN_JUCE_MODULE_DECLARATION
+ 
+ ID:               juce_hid
+ vendor:           open
+ version:          1.0.0
+ name:             JUCE HIDAPI Wrapper
+ description:      Wrapper for the hidapi library
+ website:          
+ 
+ dependencies:     juce_core
+ 
+ END_JUCE_MODULE_DECLARATION
+ 
+ *******************************************************************************/
+
+
 #pragma once
 
 #include "hid/hidapi.h"
