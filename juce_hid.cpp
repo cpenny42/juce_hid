@@ -8,6 +8,8 @@
   ==============================================================================
 */
 
+#include "juce_hid.h"
+
 #if JUCE_MAC
 #include "hid/hidapi_mac.c"
 #elif JUCE_WINDOWS

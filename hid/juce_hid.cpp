@@ -13,6 +13,8 @@
     #define DEFAULT_SIZE 2048
 #endif
 
+using namespace juce;
+
 Result hid::init()
 {
     int res = hid_init();

@@ -24,7 +24,7 @@
  description:      Wrapper for the hidapi library
  website:          
  
- dependencies:     juce_core
+ dependencies:     juce_core, juce_events
  
  END_JUCE_MODULE_DECLARATION
  
@@ -32,6 +32,9 @@
 
 
 #pragma once
+
+#include <juce_core/juce_core.h>
+#include <juce_events/juce_events.h>
 
 #include "hid/hidapi.h"
 #include "hid/juce_hid.h"
