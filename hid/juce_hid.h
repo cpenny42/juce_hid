@@ -392,6 +392,7 @@ struct hid {
         
         JUCE_LEAK_DETECTOR(DeviceIterator)
         hid_device_info* current;
+        hid_device_info* DeleteThis;
     };
     
     

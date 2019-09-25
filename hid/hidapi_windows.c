@@ -626,9 +626,8 @@ extern "C" {
 		else {
 			/* Create a temporary buffer and copy the user's data
 			into it, padding the rest with zeros. */
-			buf = (unsigned char *)malloc(dev->output_report_length);
+			buf = (unsigned char *)calloc(1, dev->output_report_length);
 			memcpy(buf, data, length);
-			memset(buf + length, 0, dev->output_report_length - length);
 			length = dev->output_report_length;
 		}
 

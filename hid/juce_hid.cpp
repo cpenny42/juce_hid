@@ -291,11 +291,14 @@ void hid::MutableDeviceInfo::disconnect() const
 
 
 hid::DeviceIterator::DeviceIterator (unsigned short vid, unsigned short pid)
-: current(hid_enumerate(vid, pid)) {}
+: current(hid_enumerate(vid, pid)) 
+{
+	DeleteThis = current;
+}
 
 hid::DeviceIterator::~DeviceIterator()
 {
-    hid_free_enumeration(current);
+    hid_free_enumeration(DeleteThis);
 }
 
 bool hid::DeviceIterator::hasNext()
